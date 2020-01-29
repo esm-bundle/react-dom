@@ -13,6 +13,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       "https://cdn.jsdelivr.net/npm/systemjs/dist/system.js",
+      { pattern: "browser-test/systemjs-setup.js", watched: true },
       { pattern: "browser-test/**/*.js", watched: true, type: "module" },
       { pattern: "./**/*.*", watched: true, included: false, served: true }
     ],
