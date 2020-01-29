@@ -20,7 +20,7 @@
     }
   },
   "files": [
-    "dist",
+    "esm",
     "system"
   ],
   "repository": {
