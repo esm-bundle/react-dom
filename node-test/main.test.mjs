@@ -3,8 +3,8 @@ describe("@esm-bundle/autopublish-template", () => {
     return import("../esm/react-dom.development.js");
   });
 
-  // it(`has a render() function on it`, async () => {
-  //   const ReactDOM = await import('../esm/react-dom.development.js')
-  //   expect(ReactDOM.render).not.to.be(undefined);
-  // })
+  it(`has a render() function on it`, async () => {
+    const ReactDOM = (await import("../esm/react-dom.development.js")).default;
+    expect(ReactDOM.render).not.to.equal(undefined);
+  });
 });
