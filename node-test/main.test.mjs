@@ -1,4 +1,4 @@
-describe("@esm-bundle/autopublish-template", () => {
+describe("@esm-bundle/react-dom", () => {
   it("can load the esm bundle without dying", () => {
     return import("../esm/react-dom.development.js");
   });
