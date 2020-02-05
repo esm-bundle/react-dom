@@ -1,6 +1,6 @@
 # react-dom
 
-[![build status](https://travis-ci.com/esm-bundle/react-dom.svg?branch=master)](https://travis-ci.com/esm-bundle/react-dom)
+[![build status](https://travis-ci.com/esm-bundle/react-dom.svg?branch=master)](https://travis-ci.com/esm-bundle/react-dom) [![](https://data.jsdelivr.com/v1/package/npm/@esm-bundle/react-dom/badge)](https://www.jsdelivr.com/package/npm/@esm-bundle/react-dom)
 
 [Instructions for creating a new esm-bundle repo](https://github.com/esm-bundle/new-repo-instructions)
 
@@ -35,6 +35,12 @@ https://unpkg.com/@esm-bundle/react-dom/esm/react-dom.resolved.development.min.j
 https://unpkg.com/@esm-bundle/react-dom/system/react-dom.production.min.js
 
 https://unpkg.com/@esm-bundle/react-dom/system/react-dom.development.min.js
+
+## Npm
+
+```sh
+npm install rxjs@npm:@esm-bundle/rxjs
+```
 
 ## Yarn
 
