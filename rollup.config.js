@@ -16,7 +16,10 @@ function createConfig(format, nodeEnv, dependencyReactVersion) {
   const resolved = dependencyReactVersion ? "resolved." : "";
 
   return {
-    input: require.resolve(`react-dom/cjs/react-dom.${fileExtra}.js`),
+    input:
+      format === "system"
+        ? `src/react-dom.${fileExtra}.js`
+        : require.resolve(`react-dom/cjs/react-dom.${fileExtra}.js`),
     output: {
       file: `${dir}/react-dom.${resolved}${fileExtra}.js`,
       format,
