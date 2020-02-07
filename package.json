@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/react-dom",
-  "version": "16.12.0-fix.1",
+  "version": "16.12.0-fix.2",
   "description": "Repo to test esm-bundle's automatic publishing",
   "main": "index.js",
   "module": "esm/index.js",
