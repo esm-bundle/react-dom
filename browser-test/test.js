@@ -8,6 +8,8 @@ describe("@esm-bundle/react-dom", () => {
       module => {
         expect(module.default).toBeDefined();
         expect(module.__esModule).toBeDefined();
+        // some libs think that createPortal is a named export
+        expect(module.createPortal).toBeDefined();
       }
     );
   });
