@@ -41,7 +41,7 @@ https://unpkg.com/@esm-bundle/react-dom/system/react-dom.development.min.js
 ## Npm
 
 ```sh
-npm install rxjs@npm:@esm-bundle/rxjs
+npm install rxjs@npm:@esm-bundle/react-dom
 ```
 
 ## Yarn
