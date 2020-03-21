@@ -27,16 +27,16 @@ function createConfig(format, nodeEnv, dependencyReactVersion) {
       paths: {
         react: dependencyReactVersion
           ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${fileExtra}.js`
-          : "react"
-      }
+          : "react",
+      },
     },
     plugins: [
       resolve(),
       commonjs(),
       replace({
         values: {
-          "process.env.NODE_ENV": JSON.stringify(nodeEnv)
-        }
+          "process.env.NODE_ENV": JSON.stringify(nodeEnv),
+        },
       }),
       nodeEnv === "development"
         ? false
@@ -44,11 +44,11 @@ function createConfig(format, nodeEnv, dependencyReactVersion) {
             output: {
               comments(node, comment) {
                 return comment.value.trim().startsWith("react-dom@");
-              }
-            }
-          })
+              },
+            },
+          }),
     ].filter(Boolean),
-    external: ["react"]
+    external: ["react"],
   };
 }
 
@@ -56,7 +56,7 @@ export default async () => {
   const reactVersions = (
     await axios("https://data.jsdelivr.com/v1/package/npm/@esm-bundle/react")
   ).data.versions;
-  const dependencyReactVersion = reactVersions.find(v =>
+  const dependencyReactVersion = reactVersions.find((v) =>
     v.startsWith(reactDomVersion)
   );
 
@@ -66,6 +66,6 @@ export default async () => {
     createConfig("module", "production"),
     createConfig("module", "development"),
     createConfig("system", "production"),
-    createConfig("system", "development")
+    createConfig("system", "development"),
   ];
 };
