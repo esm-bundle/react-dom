@@ -2,8 +2,8 @@
   "name": "@esm-bundle/react-dom",
   "version": "16.13.1",
   "description": "Repo to test esm-bundle's automatic publishing",
-  "main": "index.js",
-  "module": "esm/index.js",
+  "main": "esm/react-dom.development.js",
+  "module": "esm/react-dom.development.js",
   "type": "module",
   "scripts": {
     "test": "yarn build && concurrently -n w: 'yarn:test:*'",
