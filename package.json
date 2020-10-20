@@ -40,7 +40,7 @@
     "axios": "0.20.0",
     "esm-bundle-scripts": "1.2.0",
     "react": "17.0.0",
-    "react-dom": "16.14.0"
+    "react-dom": "17.0.0"
   },
   "dependencies": {}
 }
