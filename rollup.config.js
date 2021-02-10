@@ -9,24 +9,35 @@ const reactDomVersion = /[0-9.]+$/.exec(
   packageJson.devDependencies["react-dom"]
 )[0];
 
-function createConfig(format, nodeEnv, dependencyReactVersion) {
+function createConfig(
+  format,
+  nodeEnv,
+  dependencyReactVersion,
+  project = "react-dom"
+) {
   const dir = format === "module" ? "esm" : format;
-  const fileExtra =
+  // This is used to determine the url of react that is embedded in the ".resolved" esm bundle
+  const reactFileExtra =
     nodeEnv === "development" ? "development" : "production.min";
+  // This is used to determine the path of the file that is our input
+  let inputFileExtra = reactFileExtra;
+  if (project === "react-dom-server") {
+    inputFileExtra = `browser.${inputFileExtra}`;
+  }
   const resolved = dependencyReactVersion ? "resolved." : "";
 
   return {
     input:
       format === "system"
-        ? `src/react-dom.${fileExtra}.js`
-        : require.resolve(`react-dom/cjs/react-dom.${fileExtra}.js`),
+        ? `src/${project}.${inputFileExtra}.js`
+        : require.resolve(`react-dom/cjs/${project}.${inputFileExtra}.js`),
     output: {
-      file: `${dir}/react-dom.${resolved}${fileExtra}.js`,
+      file: `${dir}/${project}.${resolved}${inputFileExtra}.js`,
       format,
-      banner: `/* react-dom@${reactDomVersion} ${nodeEnv} version */`,
+      banner: `/* ${project}@${reactDomVersion} ${nodeEnv} version */`,
       paths: {
         react: dependencyReactVersion
-          ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${fileExtra}.js`
+          ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${reactFileExtra}.js`
           : "react",
       },
     },
@@ -43,7 +54,10 @@ function createConfig(format, nodeEnv, dependencyReactVersion) {
         : terser({
             output: {
               comments(node, comment) {
-                return comment.value.trim().startsWith("react-dom@");
+                return (
+                  comment.value.trim().startsWith(`react-dom@`) ||
+                  comment.value.trim().startsWith(`react-dom-server@`)
+                );
               },
             },
           }),
@@ -67,5 +81,22 @@ export default async () => {
     createConfig("module", "development"),
     createConfig("system", "production"),
     createConfig("system", "development"),
+    // react-dom-server
+    createConfig(
+      "module",
+      "production",
+      dependencyReactVersion,
+      "react-dom-server"
+    ),
+    createConfig(
+      "module",
+      "development",
+      dependencyReactVersion,
+      "react-dom-server"
+    ),
+    createConfig("module", "production", null, "react-dom-server"),
+    createConfig("module", "development", null, "react-dom-server"),
+    createConfig("system", "production", null, "react-dom-server"),
+    createConfig("system", "development", null, "react-dom-server"),
   ];
 };
