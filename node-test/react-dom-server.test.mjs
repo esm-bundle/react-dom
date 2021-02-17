@@ -9,6 +9,8 @@ describe(`@esm-bundle/react-dom-server`, () => {
     );
     expect(ReactDomServer.renderToString).not.to.equal(undefined);
     expect(typeof ReactDomServer.renderToString).to.equal("function");
+    expect(ReactDomServer.default.renderToString).not.to.equal(undefined);
+    expect(typeof ReactDomServer.default.renderToString).to.equal("function");
   });
 
   it(`has a renderToString method on the production bundle`, async () => {
@@ -17,5 +19,7 @@ describe(`@esm-bundle/react-dom-server`, () => {
     );
     expect(ReactDomServer.renderToString).not.to.equal(undefined);
     expect(typeof ReactDomServer.renderToString).to.equal("function");
+    expect(ReactDomServer.default.renderToString).not.to.equal(undefined);
+    expect(typeof ReactDomServer.default.renderToString).to.equal("function");
   });
 });
