@@ -87,10 +87,10 @@ export default async () => {
     // react-dom-server
     createReactDomServerConfig("module", "production", dependencyReactVersion),
     createReactDomServerConfig("module", "development", dependencyReactVersion),
-    createReactDomServerConfig("module", "production", null),
-    createReactDomServerConfig("module", "development", null),
-    createReactDomServerConfig("system", "production", null),
-    createReactDomServerConfig("system", "development", null),
+    createReactDomServerConfig("module", "production"),
+    createReactDomServerConfig("module", "development"),
+    createReactDomServerConfig("system", "production"),
+    createReactDomServerConfig("system", "development"),
   ];
 };
 
