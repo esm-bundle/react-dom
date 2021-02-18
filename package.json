@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/react-dom",
-  "version": "16.14.0-fix.0",
+  "version": "16.13.1-fix.0",
   "description": "Repo to test esm-bundle's automatic publishing",
   "main": "esm/react-dom.development.js",
   "module": "esm/react-dom.development.js",
@@ -39,8 +39,8 @@
     "@rollup/plugin-replace": "2.3.4",
     "axios": "0.21.1",
     "esm-bundle-scripts": "1.2.0",
-    "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "dependencies": {}
 }
