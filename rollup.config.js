@@ -9,59 +9,62 @@ const reactDomVersion = /[0-9.]+$/.exec(
   packageJson.devDependencies["react-dom"]
 )[0];
 
-function createConfig(
-  format,
-  nodeEnv,
-  dependencyReactVersion,
-  project = "react-dom"
-) {
-  const dir = format === "module" ? "esm" : format;
-  // This is used to determine the url of react that is embedded in the ".resolved" esm bundle
-  const reactFileExtra =
-    nodeEnv === "development" ? "development" : "production.min";
-  // This is used to determine the path of the file that is our input
-  let inputFileExtra = reactFileExtra;
-  if (project === "react-dom-server") {
-    inputFileExtra = `browser.${inputFileExtra}`;
-  }
-  const resolved = dependencyReactVersion ? "resolved." : "";
+function createReactDomServerConfig(format, nodeEnv, dependencyReactVersion) {
+  const { dir, reactFileExtra, resolved } = getDirFileExtraAndResolved(
+    format,
+    nodeEnv,
+    dependencyReactVersion
+  );
+  const inputFileExtra = `browser.${reactFileExtra}`;
+  const plugins = getCommonPlugins(nodeEnv);
 
   return {
     input:
       format === "system"
-        ? `src/${project}.${inputFileExtra}.js`
-        : require.resolve(`react-dom/cjs/${project}.${inputFileExtra}.js`),
+        ? `src/react-dom-server.${inputFileExtra}.js`
+        : require.resolve(
+            `react-dom/cjs/react-dom-server.${inputFileExtra}.js`
+          ),
     output: {
-      file: `${dir}/${project}.${resolved}${inputFileExtra}.js`,
+      file: `${dir}/react-dom-server.${resolved}${inputFileExtra}.js`,
       format,
-      banner: `/* ${project}@${reactDomVersion} ${nodeEnv} version */`,
+      banner: `/* react-dom-server@${reactDomVersion} ${nodeEnv} version */`,
       paths: {
         react: dependencyReactVersion
           ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${reactFileExtra}.js`
           : "react",
       },
     },
-    plugins: [
-      resolve(),
-      commonjs(),
-      replace({
-        values: {
-          "process.env.NODE_ENV": JSON.stringify(nodeEnv),
-        },
-      }),
-      nodeEnv === "development"
-        ? false
-        : terser({
-            output: {
-              comments(node, comment) {
-                return (
-                  comment.value.trim().startsWith(`react-dom@`) ||
-                  comment.value.trim().startsWith(`react-dom-server@`)
-                );
-              },
-            },
-          }),
-    ].filter(Boolean),
+    plugins,
+    external: ["react"],
+  };
+}
+
+function createReactDomConfig(format, nodeEnv, dependencyReactVersion) {
+  const { dir, reactFileExtra, resolved } = getDirFileExtraAndResolved(
+    format,
+    nodeEnv,
+    dependencyReactVersion
+  );
+  const inputFileExtra = reactFileExtra;
+  const plugins = getCommonPlugins(nodeEnv);
+
+  return {
+    input:
+      format === "system"
+        ? `src/react-dom.${inputFileExtra}.js`
+        : require.resolve(`react-dom/cjs/react-dom.${inputFileExtra}.js`),
+    output: {
+      file: `${dir}/react-dom.${resolved}${inputFileExtra}.js`,
+      format,
+      banner: `/* react-dom@${reactDomVersion} ${nodeEnv} version */`,
+      paths: {
+        react: dependencyReactVersion
+          ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${reactFileExtra}.js`
+          : "react",
+      },
+    },
+    plugins,
     external: ["react"],
   };
 }
@@ -75,28 +78,56 @@ export default async () => {
   );
 
   return [
-    createConfig("module", "production", dependencyReactVersion),
-    createConfig("module", "development", dependencyReactVersion),
-    createConfig("module", "production"),
-    createConfig("module", "development"),
-    createConfig("system", "production"),
-    createConfig("system", "development"),
+    createReactDomConfig("module", "production", dependencyReactVersion),
+    createReactDomConfig("module", "development", dependencyReactVersion),
+    createReactDomConfig("module", "production"),
+    createReactDomConfig("module", "development"),
+    createReactDomConfig("system", "production"),
+    createReactDomConfig("system", "development"),
     // react-dom-server
-    createConfig(
-      "module",
-      "production",
-      dependencyReactVersion,
-      "react-dom-server"
-    ),
-    createConfig(
-      "module",
-      "development",
-      dependencyReactVersion,
-      "react-dom-server"
-    ),
-    createConfig("module", "production", null, "react-dom-server"),
-    createConfig("module", "development", null, "react-dom-server"),
-    createConfig("system", "production", null, "react-dom-server"),
-    createConfig("system", "development", null, "react-dom-server"),
+    createReactDomServerConfig("module", "production", dependencyReactVersion),
+    createReactDomServerConfig("module", "development", dependencyReactVersion),
+    createReactDomServerConfig("module", "production"),
+    createReactDomServerConfig("module", "development"),
+    createReactDomServerConfig("system", "production"),
+    createReactDomServerConfig("system", "development"),
   ];
 };
+
+function getDirFileExtraAndResolved(format, nodeEnv, dependencyReactVersion) {
+  const dir = format === "module" ? "esm" : format;
+  // This is used to determine the url of react that is embedded in the ".resolved" esm bundle
+  const reactFileExtra =
+    nodeEnv === "development" ? "development" : "production.min";
+  // This is used to determine the path of the file that is our input
+  const resolved = dependencyReactVersion ? "resolved." : "";
+  return {
+    dir,
+    reactFileExtra,
+    resolved,
+  };
+}
+
+function getCommonPlugins(nodeEnv) {
+  return [
+    resolve(),
+    commonjs(),
+    replace({
+      values: {
+        "process.env.NODE_ENV": JSON.stringify(nodeEnv),
+      },
+    }),
+    nodeEnv === "development"
+      ? false
+      : terser({
+          output: {
+            comments(node, comment) {
+              return (
+                comment.value.trim().startsWith(`react-dom@`) ||
+                comment.value.trim().startsWith(`react-dom-server@`)
+              );
+            },
+          },
+        }),
+  ].filter(Boolean);
+}
