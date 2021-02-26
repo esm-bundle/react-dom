@@ -19,12 +19,7 @@ function createReactDomServerConfig(format, nodeEnv, dependencyReactVersion) {
   const plugins = getCommonPlugins(nodeEnv);
 
   return {
-    input:
-      format === "system"
-        ? `src/react-dom-server.${inputFileExtra}.js`
-        : require.resolve(
-            `react-dom/cjs/react-dom-server.${inputFileExtra}.js`
-          ),
+    input: `src/react-dom-server.${inputFileExtra}.js`,
     output: {
       file: `${dir}/react-dom-server.${resolved}${inputFileExtra}.js`,
       format,
