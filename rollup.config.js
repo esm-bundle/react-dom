@@ -4,26 +4,41 @@ import resolve from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import packageJson from "./package.json";
 import axios from "axios";
+import { babel } from "@rollup/plugin-babel";
+import path from "path";
 
 const reactDomVersion = /[0-9.]+$/.exec(
   packageJson.devDependencies["react-dom"]
 )[0];
 
-function createReactDomServerConfig(format, nodeEnv, dependencyReactVersion) {
+function createReactDomServerConfig({
+  format,
+  nodeEnv,
+  dependencyReactVersion,
+  es5 = false,
+}) {
   const { dir, reactFileExtra, resolved } = getDirFileExtraAndResolved(
     format,
     nodeEnv,
     dependencyReactVersion
   );
+  const es5FileExtra = `${es5 ? "-es5" : ""}`;
   const inputFileExtra = `browser.${reactFileExtra}`;
   const plugins = getCommonPlugins(nodeEnv);
+  if (es5) {
+    plugins.push(
+      babel({
+        configFile: path.resolve(__dirname, "es5-babel-config.json"),
+      })
+    );
+  }
 
   return {
     input: `src/react-dom-server.${inputFileExtra}.js`,
     output: {
-      file: `${dir}/react-dom-server.${resolved}${inputFileExtra}.js`,
+      file: `${dir}/react-dom-server.${resolved}${inputFileExtra}${es5FileExtra}.js`,
       format,
-      banner: `/* react-dom-server@${reactDomVersion} ${nodeEnv} version */`,
+      banner: `/* react-dom-server@${reactDomVersion} ${nodeEnv} ${es5FileExtra} version */`,
       paths: {
         react: dependencyReactVersion
           ? `//cdn.jsdelivr.net/npm/@esm-bundle/react@${dependencyReactVersion}/esm/react.${reactFileExtra}.js`
@@ -80,12 +95,31 @@ export default async () => {
     createReactDomConfig("system", "production"),
     createReactDomConfig("system", "development"),
     // react-dom-server
-    createReactDomServerConfig("module", "production", dependencyReactVersion),
-    createReactDomServerConfig("module", "development", dependencyReactVersion),
-    createReactDomServerConfig("module", "production"),
-    createReactDomServerConfig("module", "development"),
-    createReactDomServerConfig("system", "production"),
-    createReactDomServerConfig("system", "development"),
+    createReactDomServerConfig({
+      format: "module",
+      nodeEnv: "production",
+      dependencyReactVersion,
+    }),
+    createReactDomServerConfig({
+      format: "module",
+      nodeEnv: "development",
+      dependencyReactVersion,
+    }),
+    createReactDomServerConfig({ format: "module", nodeEnv: "production" }),
+    createReactDomServerConfig({ format: "module", nodeEnv: "development" }),
+    createReactDomServerConfig({ format: "system", nodeEnv: "production" }),
+    createReactDomServerConfig({ format: "system", nodeEnv: "development" }),
+    // react-dom-server-es5 build
+    createReactDomServerConfig({
+      format: "system",
+      nodeEnv: "production",
+      es5: true,
+    }),
+    createReactDomServerConfig({
+      format: "system",
+      nodeEnv: "development",
+      es5: true,
+    }),
   ];
 };
 
