@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/react-dom",
-  "version": "17.0.1-fix.0",
+  "version": "16.14.0-fix.1",
   "description": "Repo to test esm-bundle's automatic publishing",
   "main": "esm/react-dom.development.js",
   "module": "esm/react-dom.development.js",
@@ -50,7 +50,7 @@
     "pinst": "2.1.6",
     "prettier": "2.2.1",
     "pretty-quick": "3.1.0",
-    "react": "17.0.1",
+    "react": "16.14.0",
     "react-dom": "17.0.1",
     "release-it": "14.4.1",
     "release-it-plugin-esm-bundle": "2.1.0",
