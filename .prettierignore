@@ -11,3 +11,4 @@ karma.conf.cjs
 .nvmrc
 .husky
 pnpm-lock.yaml
+dist/
