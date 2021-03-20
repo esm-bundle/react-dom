@@ -16,8 +16,8 @@ devDependencies:
   pinst: 2.1.6
   prettier: 2.2.1
   pretty-quick: 3.1.0_prettier@2.2.1
-  react: 17.0.1
-  react-dom: 17.0.1_react@17.0.1
+  react: 16.13.1
+  react-dom: 16.13.1_react@16.13.1
   release-it: 14.4.1
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.42.1
@@ -3540,6 +3540,14 @@ packages:
       prettier: '>=2.0.0'
     resolution:
       integrity: sha512-DtxIxksaUWCgPFN7E1ZZk4+Aav3CCuRdhrDSFZENb404sYMtuo9Zka823F+Mgeyt8Zt3bUiCjFzzWYE9LYqkmQ==
+  /prop-types/15.7.2:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: true
+    resolution:
+      integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /protocols/1.4.8:
     dev: true
     resolution:
@@ -3631,26 +3639,32 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
-  /react-dom/17.0.1_react@17.0.1:
+  /react-dom/16.13.1_react@16.13.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react: 17.0.1
-      scheduler: 0.20.1
+      prop-types: 15.7.2
+      react: 16.13.1
+      scheduler: 0.19.1
     dev: true
     peerDependencies:
-      react: 17.0.1
+      react: ^16.13.1
     resolution:
-      integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
-  /react/17.0.1:
+      integrity: sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
+  /react-is/16.13.1:
+    dev: true
+    resolution:
+      integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+  /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+      prop-types: 15.7.2
     dev: true
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
   /read-pkg/5.2.0:
     dependencies:
       '@types/normalize-package-data': 2.4.0
@@ -3921,13 +3935,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /scheduler/0.20.1:
+  /scheduler/0.19.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
     resolution:
-      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
+      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
   /semver-diff/3.1.1:
     dependencies:
       semver: 6.3.0
@@ -4613,8 +4627,8 @@ specifiers:
   pinst: 2.1.6
   prettier: 2.2.1
   pretty-quick: 3.1.0
-  react: 17.0.1
-  react-dom: 17.0.1
+  react: 16.13.1
+  react-dom: 16.13.1
   release-it: 14.4.1
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.42.1
