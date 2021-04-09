@@ -20,7 +20,7 @@ specifiers:
   pretty-quick: 3.1.0
   react: 17.0.2
   react-dom: 17.0.2
-  release-it: 14.5.1
+  release-it: 14.6.0
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.45.0
   rollup-plugin-terser: 7.0.2
@@ -45,7 +45,7 @@ devDependencies:
   pretty-quick: 3.1.0_prettier@2.2.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  release-it: 14.5.1
+  release-it: 14.6.0
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.45.0
   rollup-plugin-terser: 7.0.2_rollup@2.45.0
@@ -1076,7 +1076,7 @@ packages:
       '@octokit/auth-token': 2.4.5
       '@octokit/graphql': 4.6.0
       '@octokit/request': 5.4.14
-      '@octokit/types': 6.12.2
+      '@octokit/types': 6.13.0
       before-after-hook: 2.1.1
       universal-user-agent: 6.0.0
     dev: true
@@ -1097,10 +1097,6 @@ packages:
       universal-user-agent: 6.0.0
     dev: true
 
-  /@octokit/openapi-types/5.3.2:
-    resolution: {integrity: sha512-NxF1yfYOUO92rCx3dwvA2onF30Vdlg7YUkMVXkeptqpzA3tRLplThhFleV/UKWFgh7rpKu1yYRbvNDUtzSopKA==}
-    dev: true
-
   /@octokit/openapi-types/6.0.0:
     resolution: {integrity: sha512-CnDdK7ivHkBtJYzWzZm7gEkanA7gKH6a09Eguz7flHw//GacPJLmkHA3f3N++MJmlxD1Fl+mB7B32EEpSCwztQ==}
     dev: true
@@ -1111,7 +1107,7 @@ packages:
       '@octokit/core': '>=2'
     dependencies:
       '@octokit/core': 3.2.5
-      '@octokit/types': 6.12.2
+      '@octokit/types': 6.13.0
     dev: true
 
   /@octokit/plugin-request-log/1.0.3_@octokit+core@3.2.5:
@@ -1160,12 +1156,6 @@ packages:
       '@octokit/plugin-paginate-rest': 2.11.0_@octokit+core@3.2.5
       '@octokit/plugin-request-log': 1.0.3_@octokit+core@3.2.5
       '@octokit/plugin-rest-endpoint-methods': 5.0.0_@octokit+core@3.2.5
-    dev: true
-
-  /@octokit/types/6.12.2:
-    resolution: {integrity: sha512-kCkiN8scbCmSq+gwdJV0iLgHc0O/GTPY1/cffo9kECu1MvatLPh9E+qFhfRIktKfHEA6ZYvv6S1B4Wnv3bi3pA==}
-    dependencies:
-      '@octokit/openapi-types': 5.3.2
     dev: true
 
   /@octokit/types/6.13.0:
@@ -2316,7 +2306,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.29
+      mime-types: 2.1.30
     dev: true
 
   /fromentries/1.3.2:
@@ -3074,11 +3064,23 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
+  /mime-db/1.47.0:
+    resolution: {integrity: sha512-QBmA/G2y+IfeS4oktet3qRZ+P5kPhCKRXxXnQEudYqUaEioAU1/Lq2us3D/t1Jfo4hE9REQPrbB7K5sOczJVIw==}
+    engines: {node: '>= 0.6'}
+    dev: true
+
   /mime-types/2.1.29:
     resolution: {integrity: sha512-Y/jMt/S5sR9OaqteJtslsFZKWOIIqMACsJSiHghlCAyhf7jfVYjKBmLiX8OgpWeW+fjJ2b+Az69aPFPkUOY6xQ==}
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: 1.46.0
+    dev: true
+
+  /mime-types/2.1.30:
+    resolution: {integrity: sha512-crmjA4bLtR8m9qLpHvgxSChT+XoSlZi8J4n/aIdn3z92e/U47Z0V/yl+Wh9W046GgFVAmoNR/fmdbZYcSSIUeg==}
+    engines: {node: '>= 0.6'}
+    dependencies:
+      mime-db: 1.47.0
     dev: true
 
   /mime/2.5.2:
@@ -3653,8 +3655,8 @@ packages:
     resolution: {integrity: sha512-AWnkgV488lCVqrUX69PppbdtfuHANXBPIpozr9NbjNp+MZTKtFeBvu8+bSwzxY3EUn0vCOa3MEXTi15eUc+d3A==}
     dev: true
 
-  /release-it/14.5.1:
-    resolution: {integrity: sha512-ivbMbYEk4E1RoV3DmWn8T37sjnCx35kwiHDSgfphDr0F8A5zbJCj4ZLZmDseE9sQi9ZjhXTN1webBLW5YbGxNg==}
+  /release-it/14.6.0:
+    resolution: {integrity: sha512-S8Y2eE94GofkVUKJnsnMy9623i7Ola8KAyWUHUeSfBvmoEWIdy458UOptQqL/jJ0yv8cozAxITSThWtAefbqIA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -3675,7 +3677,7 @@ packages:
       inquirer: 8.0.0
       is-ci: 3.0.0
       lodash: 4.17.21
-      mime-types: 2.1.29
+      mime-types: 2.1.30
       ora: 5.4.0
       os-name: 4.0.0
       parse-json: 5.2.0
