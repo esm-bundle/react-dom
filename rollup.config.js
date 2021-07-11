@@ -36,8 +36,9 @@ function createReactDomServerConfig({
   return {
     input: `src/react-dom-server.${inputFileExtra}.js`,
     output: {
-      file: `${dir}/react-dom-server.${resolved}${inputFileExtra}${es5FileExtra}.js`,
       format,
+      file: `${dir}/react-dom-server.${resolved}${inputFileExtra}${es5FileExtra}.js`,
+      sourcemap: true,
       banner: `/* react-dom-server@${reactDomVersion} ${nodeEnv} ${es5FileExtra} version */`,
       paths: {
         react: dependencyReactVersion
