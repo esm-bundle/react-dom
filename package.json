@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/react-dom",
-  "version": "17.0.1-fix.1",
+  "version": "17.0.2",
   "description": "Repo to test esm-bundle's automatic publishing",
   "main": "esm/react-dom.development.js",
   "module": "esm/react-dom.development.js",
@@ -15,7 +15,7 @@
     "format": "prettier --write .",
     "release": "release-it",
     "prepublishOnly": "pnpm build && pinst --disable",
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "postpublish": "pinst --enable"
   },
   "files": [
