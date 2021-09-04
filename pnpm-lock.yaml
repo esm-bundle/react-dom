@@ -7,7 +7,7 @@ specifiers:
   '@rollup/plugin-commonjs': 20.0.0
   '@rollup/plugin-node-resolve': 13.0.4
   '@rollup/plugin-replace': 3.0.0
-  axios: 0.21.1
+  axios: 0.21.2
   chai: 4.3.4
   concurrently: 6.2.1
   husky: 7.0.2
@@ -32,7 +32,7 @@ devDependencies:
   '@rollup/plugin-commonjs': 20.0.0_rollup@2.56.3
   '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.3
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
-  axios: 0.21.1
+  axios: 0.21.2
   chai: 4.3.4
   concurrently: 6.2.1
   husky: 7.0.2
@@ -1629,10 +1629,10 @@ packages:
     resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
     dev: true
 
-  /axios/0.21.1:
-    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+  /axios/0.21.2:
+    resolution: {integrity: sha512-87otirqUw3e8CzHTMO+/9kh/FSgXt/eVDvipijwDtEuwbkySWZ9SBm6VEubmJ/kLKEoLQV/POhxXFb66bfekfg==}
     dependencies:
-      follow-redirects: 1.13.2
+      follow-redirects: 1.14.3
     transitivePeerDependencies:
       - debug
     dev: true
@@ -2531,6 +2531,16 @@ packages:
 
   /follow-redirects/1.13.2:
     resolution: {integrity: sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
+
+  /follow-redirects/1.14.3:
+    resolution: {integrity: sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'

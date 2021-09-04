@@ -39,7 +39,7 @@
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-node-resolve": "13.0.4",
     "@rollup/plugin-replace": "3.0.0",
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "chai": "4.3.4",
     "concurrently": "6.2.1",
     "husky": "7.0.2",
