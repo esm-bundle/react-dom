@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-replace': 3.0.0
   axios: 0.24.0
   chai: 4.3.4
-  concurrently: 6.3.0
+  concurrently: 6.4.0
   husky: 7.0.4
   karma: 6.3.8
   karma-firefox-launcher: 2.1.2
@@ -34,7 +34,7 @@ devDependencies:
   '@rollup/plugin-replace': 3.0.0_rollup@2.60.0
   axios: 0.24.0
   chai: 4.3.4
-  concurrently: 6.3.0
+  concurrently: 6.4.0
   husky: 7.0.4
   karma: 6.3.8
   karma-firefox-launcher: 2.1.2
@@ -1954,8 +1954,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
-  /concurrently/6.3.0:
-    resolution: {integrity: sha512-k4k1jQGHHKsfbqzkUszVf29qECBrkvBKkcPJEUDTyVR7tZd1G/JOfnst4g1sYbFvJ4UjHZisj1aWQR8yLKpGPw==}
+  /concurrently/6.4.0:
+    resolution: {integrity: sha512-HZ3D0RTQMH3oS4gvtYj1P+NBc6PzE2McEra6yEFcQKrUQ9HvtTGU4Dbne083F034p+LRb7kWU0tPRNvSGs1UCQ==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     dependencies:
