@@ -1,5 +1,7 @@
 pre-commit:
   commands:
-    js:
+    prettier:
       glob: "*.{js,jsx}"
-      run: pretty-quick --staged && pnpm test
+      run: prettier --write {staged_files} && git add {staged_files}
+    test:
+      run: pnpm run test
