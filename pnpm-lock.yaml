@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@arkweid/lefthook': ^0.7.7
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.0
   '@rollup/plugin-babel': 5.3.0
@@ -10,12 +11,10 @@ specifiers:
   axios: 0.24.0
   chai: 4.3.4
   concurrently: 6.4.0
-  husky: 7.0.4
   karma: 6.3.8
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 4.0.1
   mocha: 9.1.3
-  pinst: 2.1.6
   prettier: 2.4.1
   pretty-quick: 3.1.2
   react: 17.0.2
@@ -26,6 +25,7 @@ specifiers:
   rollup-plugin-terser: 7.0.2
 
 devDependencies:
+  '@arkweid/lefthook': 0.7.7
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.0_@babel+core@7.16.0
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.16.0+rollup@2.60.0
@@ -35,12 +35,10 @@ devDependencies:
   axios: 0.24.0
   chai: 4.3.4
   concurrently: 6.4.0
-  husky: 7.0.4
   karma: 6.3.8
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 4.0.1_karma@6.3.8
   mocha: 9.1.3
-  pinst: 2.1.6
   prettier: 2.4.1
   pretty-quick: 3.1.2_prettier@2.4.1
   react: 17.0.2
@@ -51,6 +49,14 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.60.0
 
 packages:
+
+  /@arkweid/lefthook/0.7.7:
+    resolution: {integrity: sha1-EpUbCblV2AVIhf/pKaoHpJ85Anw=}
+    cpu: [x64, arm64, ia32]
+    os: [darwin, linux, win32]
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /@babel/code-frame/7.12.13:
     resolution: {integrity: sha512-HV1Cm0Q3ZrpCR93tkWOYiuYIgLxZXZFVG2VgK+MBWjUqZTundupbfx2aXarXuw5Ko5aMcjtJgbSs4vUGBS5v6g==}
@@ -2454,10 +2460,6 @@ packages:
       mime-types: 2.1.32
     dev: true
 
-  /fromentries/1.3.2:
-    resolution: {integrity: sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==}
-    dev: true
-
   /fs-extra/8.1.0:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==}
     engines: {node: '>=6 <7 || >=8'}
@@ -2696,12 +2698,6 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
-    dev: true
-
-  /husky/7.0.4:
-    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
-    engines: {node: '>=12'}
-    hasBin: true
     dev: true
 
   /iconv-lite/0.4.24:
@@ -3563,14 +3559,6 @@ packages:
   /picomatch/2.2.2:
     resolution: {integrity: sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==}
     engines: {node: '>=8.6'}
-    dev: true
-
-  /pinst/2.1.6:
-    resolution: {integrity: sha512-B4dYmf6nEXg1NpDSB+orYWvKa5Kfmz5KzWC29U59dpVM4S/+xp0ak/JMEsw04UQTNNKps7klu0BUalr343Gt9g==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    dependencies:
-      fromentries: 1.3.2
     dev: true
 
   /prepend-http/2.0.0:

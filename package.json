@@ -14,9 +14,7 @@
     "build": "rollup -c",
     "format": "prettier --write .",
     "release": "release-it",
-    "prepublishOnly": "pnpm build && pinst --disable",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable"
+    "prepublishOnly": "pnpm build"
   },
   "files": [
     "esm",
@@ -33,6 +31,7 @@
   },
   "homepage": "https://github.com/esm-bundle/react-dom#readme",
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7",
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.0",
     "@rollup/plugin-babel": "5.3.0",
@@ -42,12 +41,10 @@
     "axios": "0.24.0",
     "chai": "4.3.4",
     "concurrently": "6.4.0",
-    "husky": "7.0.4",
     "karma": "6.3.8",
     "karma-firefox-launcher": "2.1.2",
     "karma-jasmine": "4.0.1",
     "mocha": "9.1.3",
-    "pinst": "2.1.6",
     "prettier": "2.4.1",
     "pretty-quick": "3.1.2",
     "react": "17.0.2",
