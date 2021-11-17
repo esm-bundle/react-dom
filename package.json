@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/react-dom",
-  "version": "17.0.2",
+  "version": "17.0.2-fix.0",
   "description": "Repo to test esm-bundle's automatic publishing",
   "main": "esm/react-dom.development.js",
   "module": "esm/react-dom.development.js",
