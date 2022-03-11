@@ -11,7 +11,7 @@ specifiers:
   chai: 4.3.4
   concurrently: 7.0.0
   husky: 7.0.4
-  karma: 6.3.16
+  karma: 6.3.17
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 4.0.1
   mocha: 9.2.2
@@ -36,9 +36,9 @@ devDependencies:
   chai: 4.3.4
   concurrently: 7.0.0
   husky: 7.0.4
-  karma: 6.3.16
+  karma: 6.3.17
   karma-firefox-launcher: 2.1.2
-  karma-jasmine: 4.0.1_karma@6.3.16
+  karma-jasmine: 4.0.1_karma@6.3.17
   mocha: 9.2.2
   pinst: 3.0.0
   prettier: 2.5.1
@@ -1215,6 +1215,11 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@colors/colors/1.5.0:
+    resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
+    engines: {node: '>=0.1.90'}
+    dev: true
+
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
@@ -1953,11 +1958,6 @@ packages:
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
-    dev: true
-
-  /colors/1.4.0:
-    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
-    engines: {node: '>=0.1.90'}
     dev: true
 
   /combined-stream/1.0.8:
@@ -3041,25 +3041,25 @@ packages:
       which: 2.0.2
     dev: true
 
-  /karma-jasmine/4.0.1_karma@6.3.16:
+  /karma-jasmine/4.0.1_karma@6.3.17:
     resolution: {integrity: sha512-h8XDAhTiZjJKzfkoO1laMH+zfNlra+dEQHUAjpn5JV1zCPtOIVWGQjLBrqhnzQa/hrU2XrZwSyBa6XjEBzfXzw==}
     engines: {node: '>= 10'}
     peerDependencies:
       karma: '*'
     dependencies:
       jasmine-core: 3.6.0
-      karma: 6.3.16
+      karma: 6.3.17
     dev: true
 
-  /karma/6.3.16:
-    resolution: {integrity: sha512-nEU50jLvDe5yvXqkEJRf8IuvddUkOY2x5Xc4WXHz6dxINgGDrgD2uqQWeVrJs4hbfNaotn+HQ1LZJ4yOXrL7xQ==}
+  /karma/6.3.17:
+    resolution: {integrity: sha512-2TfjHwrRExC8yHoWlPBULyaLwAFmXmxQrcuFImt/JsAsSZu1uOWTZ1ZsWjqQtWpHLiatJOHL5jFjXSJIgCd01g==}
     engines: {node: '>= 10'}
     hasBin: true
     dependencies:
+      '@colors/colors': 1.5.0
       body-parser: 1.19.0
       braces: 3.0.2
       chokidar: 3.5.3
-      colors: 1.4.0
       connect: 3.7.0
       di: 0.0.1
       dom-serialize: 2.2.1
