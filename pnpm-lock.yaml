@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': 7.20.2
   '@babel/preset-env': 7.20.2
-  '@rollup/plugin-babel': 6.0.2
+  '@rollup/plugin-babel': 6.0.3
   '@rollup/plugin-commonjs': 23.0.2
   '@rollup/plugin-node-resolve': 15.0.0
   '@rollup/plugin-replace': 5.0.0
@@ -28,7 +28,7 @@ specifiers:
 devDependencies:
   '@babel/core': 7.20.2
   '@babel/preset-env': 7.20.2_@babel+core@7.20.2
-  '@rollup/plugin-babel': 6.0.2_rw3hudt2pmn5afxog7l3b6qtze
+  '@rollup/plugin-babel': 6.0.3_rw3hudt2pmn5afxog7l3b6qtze
   '@rollup/plugin-commonjs': 23.0.2_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.0.0_rollup@2.79.1
   '@rollup/plugin-replace': 5.0.0_rollup@2.79.1
@@ -1415,8 +1415,8 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@rollup/plugin-babel/6.0.2_rw3hudt2pmn5afxog7l3b6qtze:
-    resolution: {integrity: sha512-Vnt8XIWYwCf3MD7qhBWYlP9pjSZvcE++nlPXhQYw6YNehl5742AzFbrV6h4BHb20VAOVUlIksVLymQCTwVCGDg==}
+  /@rollup/plugin-babel/6.0.3_rw3hudt2pmn5afxog7l3b6qtze:
+    resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
