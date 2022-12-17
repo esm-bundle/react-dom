@@ -6,7 +6,7 @@ specifiers:
   '@rollup/plugin-babel': 6.0.3
   '@rollup/plugin-commonjs': 23.0.5
   '@rollup/plugin-node-resolve': 15.0.1
-  '@rollup/plugin-replace': 5.0.1
+  '@rollup/plugin-replace': 5.0.2
   axios: 1.1.3
   chai: 4.3.4
   concurrently: 7.6.0
@@ -31,7 +31,7 @@ devDependencies:
   '@rollup/plugin-babel': 6.0.3_opjstonlpkhafnz76jsxdwq25a
   '@rollup/plugin-commonjs': 23.0.5_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.0.1_rollup@2.79.1
-  '@rollup/plugin-replace': 5.0.1_rollup@2.79.1
+  '@rollup/plugin-replace': 5.0.2_rollup@2.79.1
   axios: 1.1.3
   chai: 4.3.4
   concurrently: 7.6.0
@@ -1237,7 +1237,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': 1.1.0
-      '@jridgewell/sourcemap-codec': 1.4.11
+      '@jridgewell/sourcemap-codec': 1.4.14
       '@jridgewell/trace-mapping': 0.3.13
     dev: true
 
@@ -1251,15 +1251,15 @@ packages:
     engines: {node: '>=6.0.0'}
     dev: true
 
-  /@jridgewell/sourcemap-codec/1.4.11:
-    resolution: {integrity: sha512-Fg32GrJo61m+VqYSdRSjRXMjQ06j8YIYfcTqndLYVAaHmroZHLJZCydsWBOTDqXS2v+mjxohBWEMfg97GXmYQg==}
+  /@jridgewell/sourcemap-codec/1.4.14:
+    resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
 
   /@jridgewell/trace-mapping/0.3.13:
     resolution: {integrity: sha512-o1xbKhp9qnIAoHJSWd6KlCZfqslL4valSF81H8ImioOAxluWYWOpWkpyktY2vnt4tbrX9XYaxovq6cgowaJp2w==}
     dependencies:
       '@jridgewell/resolve-uri': 3.0.3
-      '@jridgewell/sourcemap-codec': 1.4.11
+      '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
   /@nodelib/fs.scandir/2.1.4:
@@ -1479,8 +1479,8 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@rollup/plugin-replace/5.0.1_rollup@2.79.1:
-    resolution: {integrity: sha512-Z3MfsJ4CK17BfGrZgvrcp/l6WXoKb0kokULO+zt/7bmcyayokDaQ2K3eDJcRLCTAlp5FPI4/gz9MHAsosz4Rag==}
+  /@rollup/plugin-replace/5.0.2_rollup@2.79.1:
+    resolution: {integrity: sha512-M9YXNekv/C/iHHK+cvORzfRYfPbq0RDD8r0G+bMiTXjNGKulPnCT9O3Ss46WfhI6ZOCgApOP7xAdmCQJ+U2LAA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0
@@ -1489,7 +1489,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 5.0.1_rollup@2.79.1
-      magic-string: 0.26.6
+      magic-string: 0.27.0
       rollup: 2.79.1
     dev: true
 
@@ -3616,6 +3616,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
+    dev: true
+
+  /magic-string/0.27.0:
+    resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
   /media-typer/0.3.0:
