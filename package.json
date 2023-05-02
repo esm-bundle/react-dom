@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/esm-bundle/react-dom#readme",
   "devDependencies": {
-    "@babel/core": "7.21.5",
+    "@babel/core": "7.21.8",
     "@babel/preset-env": "7.21.5",
     "@rollup/plugin-babel": "6.0.3",
     "@rollup/plugin-commonjs": "24.1.0",
