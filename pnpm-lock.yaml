@@ -6,7 +6,7 @@ specifiers:
   '@rollup/plugin-babel': 6.0.4
   '@rollup/plugin-commonjs': 25.0.5
   '@rollup/plugin-node-resolve': 15.2.3
-  '@rollup/plugin-replace': 5.0.3
+  '@rollup/plugin-replace': 5.0.4
   axios: 1.5.1
   chai: 4.3.4
   concurrently: 8.2.1
@@ -31,7 +31,7 @@ devDependencies:
   '@rollup/plugin-babel': 6.0.4_owffjbdmtgt3lpojwhal3wjrny
   '@rollup/plugin-commonjs': 25.0.5_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.2.3_rollup@2.79.1
-  '@rollup/plugin-replace': 5.0.3_rollup@2.79.1
+  '@rollup/plugin-replace': 5.0.4_rollup@2.79.1
   axios: 1.5.1
   chai: 4.3.4
   concurrently: 8.2.1
@@ -1281,6 +1281,10 @@ packages:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
 
+  /@jridgewell/sourcemap-codec/1.4.15:
+    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+    dev: true
+
   /@jridgewell/trace-mapping/0.3.17:
     resolution: {integrity: sha512-MCNzAp77qzKca9+W/+I0+sEpaUnZoeasnghNeVc41VZCEKaCH73Vq3BZZ/SzWIgrqE4H4ceI+p+b6C0mHf9T4g==}
     dependencies:
@@ -1515,8 +1519,8 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@rollup/plugin-replace/5.0.3_rollup@2.79.1:
-    resolution: {integrity: sha512-je7fu05B800IrMlWjb2wzJcdXzHYW46iTipfChnBDbIbDXhASZs27W1B58T2Yf45jZtJUONegpbce+9Ut2Ti/Q==}
+  /@rollup/plugin-replace/5.0.4_rollup@2.79.1:
+    resolution: {integrity: sha512-E2hmRnlh09K8HGT0rOnnri9OTh+BILGr7NVJGB30S4E3cLRn3J0xjdiyOZ74adPs4NiAMgrjUMGAZNJDBgsdmQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -1525,7 +1529,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 5.0.1_rollup@2.79.1
-      magic-string: 0.27.0
+      magic-string: 0.30.5
       rollup: 2.79.1
     dev: true
 
@@ -3867,6 +3871,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /magic-string/0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /media-typer/0.3.0:
