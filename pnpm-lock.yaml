@@ -20,7 +20,7 @@ specifiers:
   pretty-quick: 3.1.3
   react: 17.0.2
   react-dom: 17.0.2
-  release-it: 17.0.0
+  release-it: 17.0.1
   release-it-plugin-esm-bundle: 3.0.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2
@@ -45,8 +45,8 @@ devDependencies:
   pretty-quick: 3.1.3_prettier@2.8.8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  release-it: 17.0.0
-  release-it-plugin-esm-bundle: 3.0.0_release-it@17.0.0
+  release-it: 17.0.1
+  release-it-plugin-esm-bundle: 3.0.0_release-it@17.0.1
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
 
@@ -64,14 +64,6 @@ packages:
     resolution: {integrity: sha512-HV1Cm0Q3ZrpCR93tkWOYiuYIgLxZXZFVG2VgK+MBWjUqZTundupbfx2aXarXuw5Ko5aMcjtJgbSs4vUGBS5v6g==}
     dependencies:
       '@babel/highlight': 7.22.13
-    dev: true
-
-  /@babel/code-frame/7.22.13:
-    resolution: {integrity: sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/highlight': 7.22.13
-      chalk: 2.4.2
     dev: true
 
   /@babel/code-frame/7.23.5:
@@ -4292,7 +4284,7 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
     dependencies:
-      '@babel/code-frame': 7.22.13
+      '@babel/code-frame': 7.23.5
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.1.6
@@ -4599,16 +4591,16 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it-plugin-esm-bundle/3.0.0_release-it@17.0.0:
+  /release-it-plugin-esm-bundle/3.0.0_release-it@17.0.1:
     resolution: {integrity: sha512-3N85d6C37Dk1ArUazjOz4nwubOGZS6fL7QLG1Hr0ZXAz7CDLiBfEeq3VccHkT8U0Ho797gWDA2FY36kVDmmpHw==}
     peerDependencies:
       release-it: '>=15.0.0'
     dependencies:
-      release-it: 17.0.0
+      release-it: 17.0.1
     dev: true
 
-  /release-it/17.0.0:
-    resolution: {integrity: sha512-1A1sSQy8VXuAJcslZGhKtOD/LVBuf1sH4XqhKsQuh+2EIksC2STx/MdKmVE86jFd/zorHTXOpl7Lr/isD0dDrg==}
+  /release-it/17.0.1:
+    resolution: {integrity: sha512-XHeirIW8ptkkrH1+uCg+ditclZJbSKeovrtIb42v3s2S/icF2xCTwFHpbvAKQGqBVJ5Zm49If8bwsryi247KdQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
