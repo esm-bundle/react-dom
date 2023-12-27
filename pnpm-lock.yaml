@@ -7,7 +7,7 @@ specifiers:
   '@rollup/plugin-commonjs': 25.0.7
   '@rollup/plugin-node-resolve': 15.2.3
   '@rollup/plugin-replace': 5.0.5
-  axios: 1.6.2
+  axios: 1.6.3
   chai: 4.3.4
   concurrently: 8.2.2
   husky: 8.0.3
@@ -32,7 +32,7 @@ devDependencies:
   '@rollup/plugin-commonjs': 25.0.7_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.2.3_rollup@2.79.1
   '@rollup/plugin-replace': 5.0.5_rollup@2.79.1
-  axios: 1.6.2
+  axios: 1.6.3
   chai: 4.3.4
   concurrently: 8.2.2
   husky: 8.0.3
@@ -1759,8 +1759,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios/1.6.2:
-    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
+  /axios/1.6.3:
+    resolution: {integrity: sha512-fWyNdeawGam70jXSVlKl+SUNVcL6j6W79CuSIPfi6HnDUmSCH6gyUys/HrqHeA/wU0Az41rRgean494d0Jb+ww==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
