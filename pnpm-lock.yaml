@@ -10,7 +10,7 @@ specifiers:
   axios: 1.6.6
   chai: 4.3.4
   concurrently: 8.2.2
-  husky: 9.0.2
+  husky: 9.0.5
   karma: 6.4.2
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 5.1.0
@@ -35,7 +35,7 @@ devDependencies:
   axios: 1.6.6
   chai: 4.3.4
   concurrently: 8.2.2
-  husky: 9.0.2
+  husky: 9.0.5
   karma: 6.4.2
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 5.1.0_karma@6.4.2
@@ -3092,8 +3092,8 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
-  /husky/9.0.2:
-    resolution: {integrity: sha512-0yR5R3OPjl8bYApi6T4QMOAwhtLhBjdYIVg5S6zSzIO8DIvQMh/b7Q8jW3WLbHLHtzpwiyMLBNB4R0Eb6x5+AA==}
+  /husky/9.0.5:
+    resolution: {integrity: sha512-/EX48XLor4FczjgdJjwK4qMETrJxJqF4rkgo+NUeK8b2F4TV6s5QxAuG2JZfxm4b9WnrgBGS7bA/JK+H5CKg+A==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
