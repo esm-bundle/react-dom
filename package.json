@@ -42,7 +42,7 @@
     "axios": "1.6.7",
     "chai": "4.3.4",
     "concurrently": "8.2.2",
-    "husky": "9.0.10",
+    "husky": "9.0.11",
     "karma": "6.4.2",
     "karma-firefox-launcher": "2.1.2",
     "karma-jasmine": "5.1.0",
