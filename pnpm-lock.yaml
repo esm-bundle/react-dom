@@ -20,7 +20,7 @@ specifiers:
   pretty-quick: 4.0.0
   react: 17.0.2
   react-dom: 17.0.2
-  release-it: 17.5.0
+  release-it: 17.6.0
   release-it-plugin-esm-bundle: 3.0.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2
@@ -45,8 +45,8 @@ devDependencies:
   pretty-quick: 4.0.0_prettier@2.8.8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  release-it: 17.5.0
-  release-it-plugin-esm-bundle: 3.0.0_release-it@17.5.0
+  release-it: 17.6.0
+  release-it-plugin-esm-bundle: 3.0.0_release-it@17.6.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
 
@@ -1596,6 +1596,11 @@ packages:
       '@octokit/openapi-types': 22.2.0
     dev: true
 
+  /@pnpm/config.env-replace/1.1.0:
+    resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
+    engines: {node: '>=12.22.0'}
+    dev: true
+
   /@pnpm/network.ca-file/1.0.1:
     resolution: {integrity: sha512-gkINruT2KUhZLTaiHxwCOh1O4NVnFT0wLjWFBHmTz9vpKag/C/noIMJXBxFe4F0mYpUVX2puLwAieLYFg2NvoA==}
     engines: {node: '>=12.22.0'}
@@ -1603,10 +1608,11 @@ packages:
       graceful-fs: 4.2.10
     dev: true
 
-  /@pnpm/npm-conf/1.0.4:
-    resolution: {integrity: sha512-o5YFq/+ksEJMbSzzkaQDHlp00aonLDU5xNPVTRL12hTWBbVSSeWXxPukq75h+mvXnoOWT95vV2u1HSTw2C4XOw==}
+  /@pnpm/npm-conf/2.2.2:
+    resolution: {integrity: sha512-UA91GwWPhFExt3IizW6bOeY/pQ0BkuNwKjk9iQW9KqxluGCrg4VenZ0/L+2Y0+ZOtme72EVvg6v0zo3AMQRCeA==}
     engines: {node: '>=12'}
     dependencies:
+      '@pnpm/config.env-replace': 1.1.0
       '@pnpm/network.ca-file': 1.0.1
       config-chain: 1.1.13
     dev: true
@@ -2894,11 +2900,11 @@ packages:
       once: 1.4.0
     dev: true
 
-  /global-dirs/3.0.0:
-    resolution: {integrity: sha512-v8ho2DS5RiCjftj1nD9NmnfaOzTdud7RRnVd9kFNOjqZbISlx5DQ+OrTkywgd0dIt7oFCvKetZSHoHcP3sDdiA==}
-    engines: {node: '>=10'}
+  /global-directory/4.0.1:
+    resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
+    engines: {node: '>=18'}
     dependencies:
-      ini: 2.0.0
+      ini: 4.1.1
     dev: true
 
   /globals/11.12.0:
@@ -2916,23 +2922,6 @@ packages:
       path-type: 5.0.0
       slash: 5.1.0
       unicorn-magic: 0.1.0
-    dev: true
-
-  /got/12.6.1:
-    resolution: {integrity: sha512-mThBblvlAF1d4O5oqyvN+ZxLAYwIJK7bpMxgYqPD9okW0C3qm5FFn7k811QrcuEBwaogR3ngOFoCfs6mRv7teQ==}
-    engines: {node: '>=14.16'}
-    dependencies:
-      '@sindresorhus/is': 5.3.0
-      '@szmarczak/http-timer': 5.0.1
-      cacheable-lookup: 7.0.0
-      cacheable-request: 10.2.8
-      decompress-response: 6.0.0
-      form-data-encoder: 2.1.2
-      get-stream: 6.0.1
-      http2-wrapper: 2.1.11
-      lowercase-keys: 3.0.0
-      p-cancelable: 3.0.0
-      responselike: 3.0.0
     dev: true
 
   /got/13.0.0:
@@ -3102,9 +3091,9 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /ini/2.0.0:
-    resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
-    engines: {node: '>=10'}
+  /ini/4.1.1:
+    resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dev: true
 
   /inquirer/9.3.2:
@@ -3212,12 +3201,12 @@ packages:
       is-docker: 3.0.0
     dev: true
 
-  /is-installed-globally/0.4.0:
-    resolution: {integrity: sha512-iwGqO3J21aaSkC7jWnHP/difazwS7SFeIqxv6wEtLU8Y5KlzFTjyqcSIT0d8s4+dDhKytsk9PJZ2BkS5eZwQRQ==}
-    engines: {node: '>=10'}
+  /is-installed-globally/1.0.0:
+    resolution: {integrity: sha512-K55T22lfpQ63N4KEN57jZUAaAYqYHEe8veb/TycJRk9DdSCLLcovXz/mL6mOnhQaZsQGwPhuFopdQIlqGSEjiQ==}
+    engines: {node: '>=18'}
     dependencies:
-      global-dirs: 3.0.0
-      is-path-inside: 3.0.2
+      global-directory: 4.0.1
+      is-path-inside: 4.0.0
     dev: true
 
   /is-interactive/1.0.0:
@@ -3249,9 +3238,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /is-path-inside/3.0.2:
-    resolution: {integrity: sha512-/2UGPSgmtqwo1ktx8NDHjuPwZWmHhO+gj0f93EkhLB5RgW9RZevWYYlIkS6zePc6U2WpOdQYIwHe9YC4DWEBVg==}
-    engines: {node: '>=8'}
+  /is-path-inside/4.0.0:
+    resolution: {integrity: sha512-lJJV/5dYS+RcL8uQdBDW9c9uWFLLBNRyFhnAKXw5tVqLlKZ4RMGZKv+YQ/IA3OhD+RpbJa1LLFM1FQPGyIXvOA==}
+    engines: {node: '>=12'}
     dev: true
 
   /is-plain-obj/2.1.0:
@@ -3461,11 +3450,16 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
-  /latest-version/7.0.0:
-    resolution: {integrity: sha512-KvNT4XqAMzdcL6ka6Tl3i2lYeFDgXNCuIX+xNx6ZMVR1dFq+idXd9FLKNMOIx0t9mJ9/HudyX4oZWXZQ0UJHeg==}
-    engines: {node: '>=14.16'}
+  /ky/1.4.0:
+    resolution: {integrity: sha512-tPhhoGUiEiU/WXR4rt8klIoLdnTtyu+9jVKHd/wauEjYud32jyn63mzKWQweaQrHWxBQtYoVtdcEnYX1LosnFQ==}
+    engines: {node: '>=18'}
+    dev: true
+
+  /latest-version/9.0.0:
+    resolution: {integrity: sha512-7W0vV3rqv5tokqkBAFV1LbR7HPOWzXQDpDgEuib/aJ1jsZZx6x3c2mBI+TJhJzOhkGeaLbCKEHXEXLfirtG2JA==}
+    engines: {node: '>=18'}
     dependencies:
-      package-json: 8.1.0
+      package-json: 10.0.1
     dev: true
 
   /lines-and-columns/1.1.6:
@@ -3892,12 +3886,12 @@ packages:
       netmask: 2.0.2
     dev: true
 
-  /package-json/8.1.0:
-    resolution: {integrity: sha512-hySwcV8RAWeAfPsXb9/HGSPn8lwDnv6fabH+obUZKX169QknRkRhPxd1yMubpKDskLFATkl3jHpNtVtDPFA0Wg==}
-    engines: {node: '>=14.16'}
+  /package-json/10.0.1:
+    resolution: {integrity: sha512-ua1L4OgXSBdsu1FPb7F3tYH0F48a6kxvod4pLUlGY9COeJAJQNX/sNH2IiEmsxw7lqYiAwrdHMjz1FctOsyDQg==}
+    engines: {node: '>=18'}
     dependencies:
-      got: 12.6.1
-      registry-auth-token: 5.0.1
+      ky: 1.4.0
+      registry-auth-token: 5.0.2
       registry-url: 6.0.1
       semver: 7.6.2
     dev: true
@@ -4176,11 +4170,11 @@ packages:
       unicode-match-property-value-ecmascript: 2.1.0
     dev: true
 
-  /registry-auth-token/5.0.1:
-    resolution: {integrity: sha512-UfxVOj8seK1yaIOiieV4FIP01vfBDLsY0H9sQzi9EbbUdJiuuBjJgLa1DpImXMNPnVkBD4eVxTEXcrZA6kfpJA==}
+  /registry-auth-token/5.0.2:
+    resolution: {integrity: sha512-o/3ikDxtXaA59BmZuZrJZDJv8NMDGSj+6j6XaeBmHw8eY1i1qd9+6H+LjVvQXx3HN6aRCGa1cUdJ9RaJZUugnQ==}
     engines: {node: '>=14'}
     dependencies:
-      '@pnpm/npm-conf': 1.0.4
+      '@pnpm/npm-conf': 2.2.2
     dev: true
 
   /registry-url/6.0.1:
@@ -4197,16 +4191,16 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it-plugin-esm-bundle/3.0.0_release-it@17.5.0:
+  /release-it-plugin-esm-bundle/3.0.0_release-it@17.6.0:
     resolution: {integrity: sha512-3N85d6C37Dk1ArUazjOz4nwubOGZS6fL7QLG1Hr0ZXAz7CDLiBfEeq3VccHkT8U0Ho797gWDA2FY36kVDmmpHw==}
     peerDependencies:
       release-it: '>=15.0.0'
     dependencies:
-      release-it: 17.5.0
+      release-it: 17.6.0
     dev: true
 
-  /release-it/17.5.0:
-    resolution: {integrity: sha512-+g6k/7i6AjdCozLkcybvwgYLw/RF6bcYJHf1xDLcg36GeBu8zr/geI9joLk5drubiE/UKdN694vwAeimmJWt8Q==}
+  /release-it/17.6.0:
+    resolution: {integrity: sha512-EE34dtRPL7BHpYQC7E+zAU8kjkyxFHxLk5Iqnmn/5nGcjgOQu34Au29M2V9YvxiP3tZbIlEn4gItEzu7vAPRbw==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     hasBin: true
     dependencies:
@@ -4232,7 +4226,7 @@ packages:
       proxy-agent: 6.4.0
       semver: 7.6.2
       shelljs: 0.8.5
-      update-notifier: 7.0.0
+      update-notifier: 7.1.0
       url-join: 5.0.0
       wildcard-match: 5.1.3
       yargs-parser: 21.1.1
@@ -4805,8 +4799,8 @@ packages:
       picocolors: 1.0.1
     dev: true
 
-  /update-notifier/7.0.0:
-    resolution: {integrity: sha512-Hv25Bh+eAbOLlsjJreVPOs4vd51rrtCrmhyOJtbpAojro34jS4KQaEp4/EvlHJX7jSO42VvEFpkastVyXyIsdQ==}
+  /update-notifier/7.1.0:
+    resolution: {integrity: sha512-8SV3rIqVY6EFC1WxH6L0j55s0MO79MFBS1pivmInRJg3pCEDgWHBj1Q6XByTtCLOZIFA0f6zoG9ZWf2Ks9lvTA==}
     engines: {node: '>=18'}
     dependencies:
       boxen: 7.1.1
@@ -4814,9 +4808,9 @@ packages:
       configstore: 6.0.0
       import-lazy: 4.0.0
       is-in-ci: 0.1.0
-      is-installed-globally: 0.4.0
+      is-installed-globally: 1.0.0
       is-npm: 6.0.0
-      latest-version: 7.0.0
+      latest-version: 9.0.0
       pupa: 3.1.0
       semver: 7.6.2
       semver-diff: 4.0.0
