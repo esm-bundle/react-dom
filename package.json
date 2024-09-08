@@ -41,7 +41,7 @@
     "@rollup/plugin-replace": "5.0.7",
     "axios": "1.7.7",
     "chai": "4.3.4",
-    "concurrently": "8.2.2",
+    "concurrently": "9.0.0",
     "husky": "9.1.5",
     "karma": "6.4.4",
     "karma-firefox-launcher": "2.1.3",
