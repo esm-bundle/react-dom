@@ -37,7 +37,7 @@
     "@babel/preset-env": "7.25.4",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-commonjs": "25.0.8",
-    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-node-resolve": "15.2.4",
     "@rollup/plugin-replace": "5.0.7",
     "axios": "1.7.7",
     "chai": "4.3.4",
