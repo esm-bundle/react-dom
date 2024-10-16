@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.25.8
   '@babel/preset-env': 7.25.8
   '@rollup/plugin-babel': 6.0.4
-  '@rollup/plugin-commonjs': 28.0.0
+  '@rollup/plugin-commonjs': 28.0.1
   '@rollup/plugin-node-resolve': 15.3.0
   '@rollup/plugin-replace': 6.0.1
   axios: 1.7.7
@@ -29,7 +29,7 @@ devDependencies:
   '@babel/core': 7.25.8
   '@babel/preset-env': 7.25.8_@babel+core@7.25.8
   '@rollup/plugin-babel': 6.0.4_5k6sqgurdstmvm6wuia4hzrlgy
-  '@rollup/plugin-commonjs': 28.0.0_rollup@2.79.2
+  '@rollup/plugin-commonjs': 28.0.1_rollup@2.79.2
   '@rollup/plugin-node-resolve': 15.3.0_rollup@2.79.2
   '@rollup/plugin-replace': 6.0.1_rollup@2.79.2
   axios: 1.7.7
@@ -1372,8 +1372,8 @@ packages:
       rollup: 2.79.2
     dev: true
 
-  /@rollup/plugin-commonjs/28.0.0_rollup@2.79.2:
-    resolution: {integrity: sha512-BJcu+a+Mpq476DMXG+hevgPSl56bkUoi88dKT8t3RyUp8kGuOh+2bU8Gs7zXDlu+fyZggnJ+iOBGrb/O1SorYg==}
+  /@rollup/plugin-commonjs/28.0.1_rollup@2.79.2:
+    resolution: {integrity: sha512-+tNWdlWKbpB3WgBN7ijjYkq9X5uhjmcvyjEght4NmH5fAU++zfQzAJ6wumLS+dNcvwEZhKx2Z+skY8m7v0wGSA==}
     engines: {node: '>=16.0.0 || 14 >= 14.17'}
     peerDependencies:
       rollup: ^2.68.0||^3.0.0||^4.0.0
@@ -1384,10 +1384,10 @@ packages:
       '@rollup/pluginutils': 5.0.1_rollup@2.79.2
       commondir: 1.0.1
       estree-walker: 2.0.2
-      fdir: 6.3.0_picomatch@2.3.1
+      fdir: 6.3.0_picomatch@4.0.2
       is-reference: 1.2.1
       magic-string: 0.30.5
-      picomatch: 2.3.1
+      picomatch: 4.0.2
       rollup: 2.79.2
     dev: true
 
@@ -2343,7 +2343,7 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /fdir/6.3.0_picomatch@2.3.1:
+  /fdir/6.3.0_picomatch@4.0.2:
     resolution: {integrity: sha512-QOnuT+BOtivR77wYvCWHfGt9s4Pz1VIMbD463vegT5MLqNXy8rYFT/lPVEqf/bhYeT6qmqrNHhsX+rWwe3rOCQ==}
     peerDependencies:
       picomatch: ^3 || ^4
@@ -2351,7 +2351,7 @@ packages:
       picomatch:
         optional: true
     dependencies:
-      picomatch: 2.3.1
+      picomatch: 4.0.2
     dev: true
 
   /fill-range/7.0.1:
@@ -3510,6 +3510,11 @@ packages:
   /picomatch/3.0.1:
     resolution: {integrity: sha512-I3EurrIQMlRc9IaAZnqRR044Phh2DXY+55o7uJ0V+hYZAcQYSuFWsc9q5PvyDHUSCe1Qxn/iBz+78s86zWnGag==}
     engines: {node: '>=10'}
+    dev: true
+
+  /picomatch/4.0.2:
+    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
+    engines: {node: '>=12'}
     dev: true
 
   /pinst/3.0.0:
