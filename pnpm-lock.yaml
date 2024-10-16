@@ -20,7 +20,7 @@ specifiers:
   pretty-quick: 4.0.0
   react: 17.0.2
   react-dom: 17.0.2
-  release-it: 17.9.0
+  release-it: 17.10.0
   release-it-plugin-esm-bundle: 3.0.0
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2
@@ -45,8 +45,8 @@ devDependencies:
   pretty-quick: 4.0.0_prettier@2.8.8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  release-it: 17.9.0
-  release-it-plugin-esm-bundle: 3.0.0_release-it@17.9.0
+  release-it: 17.10.0
+  release-it-plugin-esm-bundle: 3.0.0_release-it@17.10.0
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2_rollup@2.79.2
 
@@ -2416,7 +2416,7 @@ packages:
     resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
     engines: {node: '>=12'}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.0
     dev: true
@@ -3726,16 +3726,16 @@ packages:
       jsesc: 3.0.2
     dev: true
 
-  /release-it-plugin-esm-bundle/3.0.0_release-it@17.9.0:
+  /release-it-plugin-esm-bundle/3.0.0_release-it@17.10.0:
     resolution: {integrity: sha512-3N85d6C37Dk1ArUazjOz4nwubOGZS6fL7QLG1Hr0ZXAz7CDLiBfEeq3VccHkT8U0Ho797gWDA2FY36kVDmmpHw==}
     peerDependencies:
       release-it: '>=15.0.0'
     dependencies:
-      release-it: 17.9.0
+      release-it: 17.10.0
     dev: true
 
-  /release-it/17.9.0:
-    resolution: {integrity: sha512-KAZqvYcfYI/Rva8yr7vzVruM3mN8kuUR1WeQfOtGrc4ub7bGYf8eN91NOXC73LJE1uNpVlppF5xB8KOvKtQosg==}
+  /release-it/17.10.0:
+    resolution: {integrity: sha512-00cXYEl7RFD5NnjXpwaH9JFjpwe8w3NcfUd4XPxrKQkszp1xppPo42zK9eSbxStKyPA5CVk2KmKPDPDiAKVJTA==}
     engines: {node: ^18.18.0 || ^20.9.0 || ^22.0.0}
     hasBin: true
     dependencies:
