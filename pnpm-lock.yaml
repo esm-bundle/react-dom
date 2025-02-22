@@ -16,7 +16,7 @@ specifiers:
   karma-jasmine: 5.1.0
   mocha: 10.8.2
   pinst: 3.0.0
-  prettier: 2.8.8
+  prettier: 3.5.2
   pretty-quick: 4.0.0
   react: 17.0.2
   react-dom: 17.0.2
@@ -41,8 +41,8 @@ devDependencies:
   karma-jasmine: 5.1.0_karma@6.4.4
   mocha: 10.8.2
   pinst: 3.0.0
-  prettier: 2.8.8
-  pretty-quick: 4.0.0_prettier@2.8.8
+  prettier: 3.5.2
+  pretty-quick: 4.0.0_prettier@3.5.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   release-it: 18.1.2
@@ -3710,9 +3710,9 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier/2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.5.2:
+    resolution: {integrity: sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
@@ -3723,7 +3723,7 @@ packages:
       parse-ms: 4.0.0
     dev: true
 
-  /pretty-quick/4.0.0_prettier@2.8.8:
+  /pretty-quick/4.0.0_prettier@3.5.2:
     resolution: {integrity: sha512-M+2MmeufXb/M7Xw3Afh1gxcYpj+sK0AxEfnfF958ktFeAyi5MsKY5brymVURQLgPLV1QaF5P4pb2oFJ54H3yzQ==}
     engines: {node: '>=14'}
     hasBin: true
@@ -3736,7 +3736,7 @@ packages:
       mri: 1.2.0
       picocolors: 1.0.0
       picomatch: 3.0.1
-      prettier: 2.8.8
+      prettier: 3.5.2
       tslib: 2.6.2
     dev: true
 
