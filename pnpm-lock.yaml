@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.28.4
   '@babel/preset-env': 7.28.3
   '@rollup/plugin-babel': 6.1.0
-  '@rollup/plugin-commonjs': 28.0.6
+  '@rollup/plugin-commonjs': 28.0.7
   '@rollup/plugin-node-resolve': 16.0.3
   '@rollup/plugin-replace': 6.0.2
   axios: 1.12.2
@@ -29,7 +29,7 @@ devDependencies:
   '@babel/core': 7.28.4
   '@babel/preset-env': 7.28.3_@babel+core@7.28.4
   '@rollup/plugin-babel': 6.1.0_ky5i7uz3frm34ce7auajvuaoj4
-  '@rollup/plugin-commonjs': 28.0.6_rollup@2.79.2
+  '@rollup/plugin-commonjs': 28.0.7_rollup@2.79.2
   '@rollup/plugin-node-resolve': 16.0.3_rollup@2.79.2
   '@rollup/plugin-replace': 6.0.2_rollup@2.79.2
   axios: 1.12.2
@@ -1580,8 +1580,8 @@ packages:
       - supports-color
     dev: true
 
-  /@rollup/plugin-commonjs/28.0.6_rollup@2.79.2:
-    resolution: {integrity: sha512-XSQB1K7FUU5QP+3lOQmVCE3I0FcbbNvmNT4VJSj93iUjayaARrTQeoRdiYQoftAJBLrR9t2agwAd3ekaTgHNlw==}
+  /@rollup/plugin-commonjs/28.0.7_rollup@2.79.2:
+    resolution: {integrity: sha512-6cE2Wr/MkpdtTS8gXlCn9Zdmf7e9Xm96yFqOwFEXuvYLAHtjRf57/n6GEVF4K8NSesT1eKdBtcDA/SQdpW/8nA==}
     engines: {node: '>=16.0.0 || 14 >= 14.17'}
     peerDependencies:
       rollup: ^2.68.0||^3.0.0||^4.0.0
@@ -1592,10 +1592,10 @@ packages:
       '@rollup/pluginutils': 5.0.1_rollup@2.79.2
       commondir: 1.0.1
       estree-walker: 2.0.2
-      fdir: 6.4.4_picomatch@4.0.2
+      fdir: 6.5.0_picomatch@4.0.3
       is-reference: 1.2.1
       magic-string: 0.30.5
-      picomatch: 4.0.2
+      picomatch: 4.0.3
       rollup: 2.79.2
     dev: true
 
@@ -2469,17 +2469,6 @@ packages:
 
   /fast-content-type-parse/3.0.0:
     resolution: {integrity: sha512-ZvLdcY8P+N8mGQJahJV5G4U88CSvT1rP8ApL6uETe88MBXrBHAkZlSEySdUlyztF7ccb+Znos3TFqaepHxdhBg==}
-    dev: true
-
-  /fdir/6.4.4_picomatch@4.0.2:
-    resolution: {integrity: sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
-    dependencies:
-      picomatch: 4.0.2
     dev: true
 
   /fdir/6.5.0_picomatch@4.0.3:
