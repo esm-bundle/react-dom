@@ -20,7 +20,7 @@ specifiers:
   pretty-quick: 4.2.2
   react: 17.0.2
   react-dom: 17.0.2
-  release-it: 19.0.5
+  release-it: 19.0.6
   release-it-plugin-esm-bundle: 3.0.0
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2
@@ -45,8 +45,8 @@ devDependencies:
   pretty-quick: 4.2.2_prettier@2.8.8
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  release-it: 19.0.5
-  release-it-plugin-esm-bundle: 3.0.0_release-it@19.0.5
+  release-it: 19.0.6
+  release-it-plugin-esm-bundle: 3.0.0_release-it@19.0.6
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2_rollup@2.79.2
 
@@ -1452,7 +1452,7 @@ packages:
     resolution: {integrity: sha512-hoYicJZaqISMAI3JfaDr1qMNi48OctWuOih1m80bkYow/ayPw6Jj52tqWJ6GEoFTk1gBqfanSoI1iY99Z5+ekQ==}
     engines: {node: '>= 20'}
     dependencies:
-      '@octokit/types': 14.0.0
+      '@octokit/types': 14.1.0
       universal-user-agent: 7.0.2
     dev: true
 
@@ -1461,12 +1461,8 @@ packages:
     engines: {node: '>= 20'}
     dependencies:
       '@octokit/request': 10.0.3
-      '@octokit/types': 14.0.0
+      '@octokit/types': 14.1.0
       universal-user-agent: 7.0.2
-    dev: true
-
-  /@octokit/openapi-types/25.0.0:
-    resolution: {integrity: sha512-FZvktFu7HfOIJf2BScLKIEYjDsw6RKc7rBJCdvCTfKsVnx2GEB/Nbzjr29DUdb7vQhlzS/j8qDzdditP0OC6aw==}
     dev: true
 
   /@octokit/openapi-types/25.1.0:
@@ -1510,7 +1506,7 @@ packages:
     resolution: {integrity: sha512-KRA7VTGdVyJlh0cP5Tf94hTiYVVqmt2f3I6mnimmaVz4UG3gQV/k4mDJlJv3X67iX6rmN7gSHCF8ssqeMnmhZg==}
     engines: {node: '>= 20'}
     dependencies:
-      '@octokit/types': 14.0.0
+      '@octokit/types': 14.1.0
     dev: true
 
   /@octokit/request/10.0.3:
@@ -1519,7 +1515,7 @@ packages:
     dependencies:
       '@octokit/endpoint': 11.0.0
       '@octokit/request-error': 7.0.0
-      '@octokit/types': 14.0.0
+      '@octokit/types': 14.1.0
       fast-content-type-parse: 3.0.0
       universal-user-agent: 7.0.2
     dev: true
@@ -1532,12 +1528,6 @@ packages:
       '@octokit/plugin-paginate-rest': 13.1.1_@octokit+core@7.0.4
       '@octokit/plugin-request-log': 6.0.0_@octokit+core@7.0.4
       '@octokit/plugin-rest-endpoint-methods': 16.1.0_@octokit+core@7.0.4
-    dev: true
-
-  /@octokit/types/14.0.0:
-    resolution: {integrity: sha512-VVmZP0lEhbo2O1pdq63gZFiGCKkm8PPp8AUOijlwPO6hojEVjspA0MWKP7E4hbvGxzFKNqKr6p0IYtOH/Wf/zA==}
-    dependencies:
-      '@octokit/openapi-types': 25.0.0
     dev: true
 
   /@octokit/types/14.1.0:
@@ -1899,8 +1889,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /c12/3.3.0:
-    resolution: {integrity: sha512-K9ZkuyeJQeqLEyqldbYLG3wjqwpw4BVaAqvmxq3GYKK0b1A/yYQdIcJxkzAOWcNVWhJpRXAPfZFueekiY/L8Dw==}
+  /c12/3.3.1:
+    resolution: {integrity: sha512-LcWQ01LT9tkoUINHgpIOv3mMs+Abv7oVCrtpMRi1PaapVEpWoMga5WuT7/DqFTu7URP9ftbOmimNw1KNIGh9DQ==}
     peerDependencies:
       magicast: ^0.3.5
     peerDependenciesMeta:
@@ -1910,10 +1900,10 @@ packages:
       chokidar: 4.0.3
       confbox: 0.2.2
       defu: 6.1.4
-      dotenv: 17.2.2
+      dotenv: 17.2.3
       exsolve: 1.0.7
       giget: 2.0.0
-      jiti: 2.5.1
+      jiti: 2.6.1
       ohash: 2.0.11
       pathe: 2.0.3
       perfect-debounce: 2.0.0
@@ -2300,8 +2290,8 @@ packages:
       void-elements: 2.0.1
     dev: true
 
-  /dotenv/17.2.2:
-    resolution: {integrity: sha512-Sf2LSQP+bOlhKWWyhFsn0UsfdK/kCWRv1iuA2gXAwt3dyNabr6QSj00I2V10pidqz69soatm9ZwZvpQMTIOd5Q==}
+  /dotenv/17.2.3:
+    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
     engines: {node: '>=12'}
     dev: true
 
@@ -3001,8 +2991,8 @@ packages:
       supports-color: 7.2.0
     dev: true
 
-  /jiti/2.5.1:
-    resolution: {integrity: sha512-twQoecYPiVA5K/h6SxtORw/Bs3ar+mLUtoPSc7iMXzQzK8d7eJ/R09wmTwAjiamETn1cXYPGfNnu7DMoHgu12w==}
+  /jiti/2.6.1:
+    resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
     dev: true
 
@@ -3719,16 +3709,16 @@ packages:
       jsesc: 3.0.2
     dev: true
 
-  /release-it-plugin-esm-bundle/3.0.0_release-it@19.0.5:
+  /release-it-plugin-esm-bundle/3.0.0_release-it@19.0.6:
     resolution: {integrity: sha512-3N85d6C37Dk1ArUazjOz4nwubOGZS6fL7QLG1Hr0ZXAz7CDLiBfEeq3VccHkT8U0Ho797gWDA2FY36kVDmmpHw==}
     peerDependencies:
       release-it: '>=15.0.0'
     dependencies:
-      release-it: 19.0.5
+      release-it: 19.0.6
     dev: true
 
-  /release-it/19.0.5:
-    resolution: {integrity: sha512-bYlUKC0TQroBKi8jQUeoxLHql4d9Fx/2EQLHPKUobXTNSiTS2WY8vlgdHZRhRjVEMyAWwyadJVKfFZnRJuRn4Q==}
+  /release-it/19.0.6:
+    resolution: {integrity: sha512-XTCNZ2mV9wjASQmc2bcQjA+ImJiFMijbFSyQE6lDmP1Plq17acjYaoY5FmJb5Lh/Nv4UDwfRlKQMv1DvHFKf1g==}
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
     dependencies:
@@ -3736,7 +3726,7 @@ packages:
       '@octokit/rest': 22.0.0
       '@phun-ky/typeof': 2.0.3
       async-retry: 1.3.3
-      c12: 3.3.0
+      c12: 3.3.1
       ci-info: 4.3.0
       eta: 4.0.1
       git-url-parse: 16.1.0
