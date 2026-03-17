@@ -34,7 +34,7 @@
   "homepage": "https://github.com/esm-bundle/react-dom#readme",
   "devDependencies": {
     "@babel/core": "7.29.0",
-    "@babel/preset-env": "7.29.0",
+    "@babel/preset-env": "7.29.2",
     "@rollup/plugin-babel": "7.0.0",
     "@rollup/plugin-commonjs": "29.0.2",
     "@rollup/plugin-node-resolve": "16.0.3",
