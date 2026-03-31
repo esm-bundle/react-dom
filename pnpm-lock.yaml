@@ -7,7 +7,7 @@ specifiers:
   '@rollup/plugin-commonjs': 29.0.2
   '@rollup/plugin-node-resolve': 16.0.3
   '@rollup/plugin-replace': 6.0.3
-  axios: 1.14.0
+  axios: 1.14.1
   chai: 4.3.4
   concurrently: 9.2.1
   husky: 9.1.7
@@ -32,7 +32,7 @@ devDependencies:
   '@rollup/plugin-commonjs': 29.0.2_rollup@2.80.0
   '@rollup/plugin-node-resolve': 16.0.3_rollup@2.80.0
   '@rollup/plugin-replace': 6.0.3_rollup@2.80.0
-  axios: 1.14.0
+  axios: 1.14.1
   chai: 4.3.4
   concurrently: 9.2.1
   husky: 9.1.7
@@ -1689,11 +1689,12 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
 
-  /axios/1.14.0:
-    resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
+  /axios/1.14.1:
+    resolution: {integrity: sha512-vF/aB4vrIzLyOb2TB9gpuE8gusNHpZqk2ZZcAqSnRjW5IcY7tFSBEurD2tbakohj0Rw5xMHYwjSqOGSfr0iewA==}
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.5
+      plain-crypto-js: 4.2.1
       proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
@@ -3513,6 +3514,11 @@ packages:
       confbox: 0.2.2
       exsolve: 1.0.8
       pathe: 2.0.3
+    dev: true
+
+  /plain-crypto-js/4.2.1:
+    resolution: {integrity: sha512-Wv41p4/aEMq03JjDqi0JxPYT4aoMbbQMSM8ur4QkjvjGEeuYvI7rGkqLcOZ7K1iThQGvpNvJnxRWcNodCNuEEQ==}
+    requiresBuild: true
     dev: true
 
   /prettier/2.8.8:
