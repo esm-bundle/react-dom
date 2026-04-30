@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.29.0
-  '@babel/preset-env': 7.29.2
+  '@babel/preset-env': 7.29.3
   '@rollup/plugin-babel': 7.0.0
   '@rollup/plugin-commonjs': 29.0.2
   '@rollup/plugin-node-resolve': 16.0.3
@@ -27,7 +27,7 @@ specifiers:
 
 devDependencies:
   '@babel/core': 7.29.0
-  '@babel/preset-env': 7.29.2_@babel+core@7.29.0
+  '@babel/preset-env': 7.29.3_@babel+core@7.29.0
   '@rollup/plugin-babel': 7.0.0_ej23mzyko5rllom7c2gwfbxrda
   '@rollup/plugin-commonjs': 29.0.2_rollup@2.80.0
   '@rollup/plugin-node-resolve': 16.0.3_rollup@2.80.0
@@ -69,6 +69,11 @@ packages:
 
   /@babel/compat-data/7.29.0:
     resolution: {integrity: sha512-T1NCJqT/j9+cn8fvkt7jtwbLBfLC/1y1c7NtCeXFRgzGTsafi68MRv8yzkYSapBnFA6L3U2VSc02ciDzoAJhJg==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
+  /@babel/compat-data/7.29.3:
+    resolution: {integrity: sha512-LIVqM46zQWZhj17qA8wb4nW/ixr2y1Nw+r1etiAWgRM6U1IqP+LNhL1yg440jYZR72jCWcWbLWzIosH+uP1fqg==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -341,6 +346,19 @@ packages:
     dependencies:
       '@babel/core': 7.29.0
       '@babel/helper-plugin-utils': 7.28.6
+    dev: true
+
+  /@babel/plugin-bugfix-safari-rest-destructuring-rhs-array/7.29.3_@babel+core@7.29.0:
+    resolution: {integrity: sha512-SRS46DFR4HqzUzCVgi90/xMoL+zeBDBvWdKYXSEzh79kXswNFEglUpMKxR04//dPqwYXWUBJ3mpUd933ru9Kmg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.29.0
+      '@babel/helper-plugin-utils': 7.28.6
+      '@babel/helper-skip-transparent-expression-wrappers': 7.27.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/7.27.1_@babel+core@7.29.0:
@@ -998,13 +1016,13 @@ packages:
       '@babel/helper-plugin-utils': 7.28.6
     dev: true
 
-  /@babel/preset-env/7.29.2_@babel+core@7.29.0:
-    resolution: {integrity: sha512-DYD23veRYGvBFhcTY1iUvJnDNpuqNd/BzBwCvzOTKUnJjKg5kpUBh3/u9585Agdkgj+QuygG7jLfOPWMa2KVNw==}
+  /@babel/preset-env/7.29.3_@babel+core@7.29.0:
+    resolution: {integrity: sha512-ySZypNLAIH1ClygLDQzVMoGQRViATnkHkYYV6TcNDz+8+jwZCdsguGvsb3EY5d9wyWyhmF1iSuFM0Yh5XPnqSA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.29.0
+      '@babel/compat-data': 7.29.3
       '@babel/core': 7.29.0
       '@babel/helper-compilation-targets': 7.28.6
       '@babel/helper-plugin-utils': 7.28.6
@@ -1012,6 +1030,7 @@ packages:
       '@babel/plugin-bugfix-firefox-class-in-computed-class-key': 7.28.5_@babel+core@7.29.0
       '@babel/plugin-bugfix-safari-class-field-initializer-scope': 7.27.1_@babel+core@7.29.0
       '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.27.1_@babel+core@7.29.0
+      '@babel/plugin-bugfix-safari-rest-destructuring-rhs-array': 7.29.3_@babel+core@7.29.0
       '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.27.1_@babel+core@7.29.0
       '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': 7.28.6_@babel+core@7.29.0
       '@babel/plugin-proposal-private-property-in-object': 7.21.0-placeholder-for-preset-env.2_@babel+core@7.29.0
@@ -1688,7 +1707,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
     dependencies:
-      '@babel/compat-data': 7.29.0
+      '@babel/compat-data': 7.29.3
       '@babel/core': 7.29.0
       '@babel/helper-define-polyfill-provider': 0.6.6_@babel+core@7.29.0
       semver: 6.3.1
