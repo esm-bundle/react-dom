@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.29.7
   '@babel/preset-env': 7.29.7
   '@rollup/plugin-babel': 7.0.0
-  '@rollup/plugin-commonjs': 29.0.2
+  '@rollup/plugin-commonjs': 29.0.3
   '@rollup/plugin-node-resolve': 16.0.3
   '@rollup/plugin-replace': 6.0.3
   axios: 1.18.0
@@ -29,7 +29,7 @@ devDependencies:
   '@babel/core': 7.29.7
   '@babel/preset-env': 7.29.7_@babel+core@7.29.7
   '@rollup/plugin-babel': 7.0.0_tvhnprqmruin5o5thkhy2glhzi
-  '@rollup/plugin-commonjs': 29.0.2_rollup@2.80.0
+  '@rollup/plugin-commonjs': 29.0.3_rollup@2.80.0
   '@rollup/plugin-node-resolve': 16.0.3_rollup@2.80.0
   '@rollup/plugin-replace': 6.0.3_rollup@2.80.0
   axios: 1.18.0
@@ -1617,8 +1617,8 @@ packages:
       - supports-color
     dev: true
 
-  /@rollup/plugin-commonjs/29.0.2_rollup@2.80.0:
-    resolution: {integrity: sha512-S/ggWH1LU7jTyi9DxZOKyxpVd4hF/OZ0JrEbeLjXk/DFXwRny0tjD2c992zOUYQobLrVkRVMDdmHP16HKP7GRg==}
+  /@rollup/plugin-commonjs/29.0.3_rollup@2.80.0:
+    resolution: {integrity: sha512-ZaOxZceP7SOUW7Lqw5IRVweSQYWaeIPnXIGLiB690EBA3FGJTO40EEr2L5yZplJWsgTCogILRSpcAe7+U0Otdg==}
     engines: {node: '>=16.0.0 || 14 >= 14.17'}
     peerDependencies:
       rollup: ^2.68.0||^3.0.0||^4.0.0
